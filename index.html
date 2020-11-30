@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<meta charset="utf-8"/>
+<head>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+   integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+   crossorigin=""></script>
+<script src="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.3.1/leaflet-omnivore.min.js"></script>
+<script src='https://unpkg.com/@turf/turf/turf.min.js'></script>
+<link rel="stylesheet" href="style.css" />
+<title>Mes voyages</title>
+</head>
+
+
+
+
+<body>
+	<p>Sur cette page, vous pouvez téléverser des fichiers géographiques (formats gpx, kml ou geojson, un seul ou plusieurs à la fois) pour voir apparaître vos trajets sur la carte.</p>
+	<p>Si besoin, pour essayer : des fichiers exemples sont disponibles <a href="https://areskidrissa.cc/maps/input_app/scripts/data.html" target="_blank">ici</a>.</p>
+	<input type="file" id="file-selector" accept=" .gpx, .kml, .geojson" multiple>
+	<p><div id="mapid"></div></p>
+  
+
+</body>
+<script src='leafletmap.js'></script>
+
+</html>
